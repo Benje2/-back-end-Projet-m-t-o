@@ -1,0 +1,7 @@
+CREATE TABLE temperature_data (
+    id SERIAL PRIMARY KEY,
+    city VARCHAR(100),
+    timestamp TIMESTAMP,
+    temperature FLOAT,
+ CONSTRAINT unique_city_timestamp UNIQUE (city, timestamp);
+)
